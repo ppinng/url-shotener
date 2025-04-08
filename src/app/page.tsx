@@ -210,7 +210,7 @@ export default function Home() {
       // For frontend-only version, store the mapping in localStorage
       localStorage.setItem(hash, url);
       setShortUrl(fullShortUrl);
-    } catch (err) {
+    } catch {
       alert('Please enter a valid URL');
     }
   };
