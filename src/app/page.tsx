@@ -38,6 +38,10 @@ const Container = styled.div`
   min-height: 100vh;
   padding: 2rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const Card = styled.div`
@@ -47,6 +51,14 @@ const Card = styled.div`
   padding: 2rem;
   width: 100%;
   max-width: 600px;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -55,6 +67,10 @@ const Title = styled.h1`
   margin-bottom: 2rem;
   color: #333;
   font-weight: 700;
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Form = styled.form`
@@ -66,6 +82,10 @@ const Form = styled.form`
 const InputGroup = styled.div`
   display: flex;
   gap: 0.5rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const Input = styled.input`
@@ -79,6 +99,10 @@ const Input = styled.input`
   &:focus {
     outline: none;
     border-color: #4a90e2;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 `;
 
@@ -103,6 +127,11 @@ const Button = styled.button`
   &:active {
     animation: ${pulse} 0.3s ease;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 const ResultContainer = styled.div`
@@ -123,6 +152,13 @@ const ResultBox = styled.div`
   padding: 0.75rem 1rem;
   border-radius: 8px;
   border: 2px solid #e0e0e0;
+  gap: 0.5rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    word-break: break-all;
+  }
 `;
 
 const ShortUrl = styled.a`
@@ -132,7 +168,11 @@ const ShortUrl = styled.a`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
+
+  @media (max-width: 480px) {
+    white-space: normal;
+  }
+
   &:hover {
     text-decoration: underline;
   }
@@ -158,6 +198,10 @@ const Footer = styled.footer`
   text-align: center;
   color: #666;
   font-size: 0.875rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
+  }
 `;
 
 const ToastMessage = styled.div`
