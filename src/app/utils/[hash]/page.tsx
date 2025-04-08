@@ -67,7 +67,6 @@ const BackButton = styled.a`
 
 export default function RedirectPage() {
   const params = useParams();
-  const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const hash = params.hash as string;
 
